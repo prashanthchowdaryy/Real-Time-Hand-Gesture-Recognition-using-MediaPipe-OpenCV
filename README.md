@@ -1,129 +1,110 @@
-Real-Time Hand Gesture Recognition using MediaPipe & OpenCV
-📌 Overview
+# Real-Time Hand Gesture Recognition (MediaPipe + OpenCV)
 
-This project implements real-time hand gesture detection using MediaPipe and OpenCV in Python.
+This project performs real-time hand tracking and gesture detection using MediaPipe and OpenCV.
+It detects hand landmarks and tracks finger movements using a webcam.
 
-The system detects hand landmarks through a webcam feed and tracks finger movements in real time. It can be extended for gesture-based control systems, virtual mouse, sign recognition, or AI-based interaction systems.
+---
 
-Built as part of practical exploration in Computer Vision and AI.
+## Features
 
-🚀 Features
+* Real-time hand tracking
+* 21 hand landmarks
+* Finger state detection (open/closed)
+* Webcam integration
+* Fast and lightweight
+* Accurate detection
 
-✅ Real-time hand tracking
+---
 
-✅ 21 hand landmark detection
+## Tech Stack
 
-✅ Finger state detection (open/closed)
+* Python
+* OpenCV
+* MediaPipe
+* NumPy
 
-✅ Live webcam integration
+---
 
-✅ High accuracy using MediaPipe ML models
+## Project Structure
 
-✅ Lightweight & fast execution
+* hand_tracking.py
+* requirements.txt
+* README.md
+* screenshots/
 
-🛠️ Tech Stack
+---
 
-Python
+## Installation
 
-OpenCV
+Clone the repository:
 
-MediaPipe
-
-NumPy
-
-📂 Project Structure
-mediapipe-hand-gesture/
-│
-├── hand_tracking.py
-├── requirements.txt
-├── README.md
-└── screenshots/
-⚙️ Installation
-1️⃣ Clone the Repository
 git clone https://github.com/your-username/mediapipe-hand-gesture.git
+
+Go to the folder:
+
 cd mediapipe-hand-gesture
-2️⃣ Install Dependencies
+
+Install dependencies:
+
 pip install -r requirements.txt
 
-Or manually install:
+Or manually:
 
 pip install opencv-python mediapipe numpy
-▶️ How to Run
+
+---
+
+## Usage
+
+Run the script:
+
 python hand_tracking.py
 
-Your webcam will start, and hand landmarks will be detected in real time.
+* Webcam will start
+* Hand landmarks will appear
+* Finger movements are tracked
+* Press **Q** to exit
 
-Press Q to exit.
+---
 
-🧠 How It Works
+## How It Works
 
-MediaPipe uses a pre-trained ML model to detect 21 hand landmarks.
+* Webcam captures frames
+* MediaPipe detects 21 hand landmarks
+* Each landmark has coordinates
+* Finger states are calculated
+* OpenCV displays results in real time
 
-OpenCV captures live video frames.
+---
 
-Each frame is processed and annotated with landmark positions.
+## Applications
 
-Finger states are determined by comparing landmark coordinates.
+* Virtual mouse
+* Gesture control
+* Sign language basics
+* AR/VR interaction
+* Touchless systems
 
-The output is displayed in real-time.
+---
 
-📸 Demo
+## Future Improvements
 
-(Add screenshots or demo GIF here)
+* Gesture classification
+* Custom gesture training
+* System control integration
+* GUI dashboard
 
-Example output:
+---
 
-Hand landmark detection
+## Learning
 
-Finger tracking visualization
+* Hand tracking basics
+* Real-time processing
+* Landmark-based logic
+* ML model usage
 
-Real-time FPS counter
+---
 
-📈 Applications
+## Support
 
-Virtual Mouse
-
-Gesture-Based Volume Control
-
-Sign Language Recognition
-
-AR/VR Interaction
-
-Gaming Controls
-
-Touchless Interfaces
-
-🔮 Future Improvements
-
-Gesture classification model
-
-Custom gesture training
-
-Integration with system controls
-
-GUI dashboard
-
-Deployment as desktop application
-
-📚 Learning Outcomes
-
-Practical use of MediaPipe ML solutions
-
-Real-time computer vision pipeline
-
-Frame processing optimization
-
-Coordinate-based logic building
-
-AI model integration in applications
-
-👨‍💻 Author
-
-Prashanth
-BCA Student | Aspiring Data Scientist
-Passionate about AI, Automation & Real-World Problem Solving
-
-⭐ If You Like This Project
-
-Give it a star 🌟
-Contributions and suggestions are welcome!
+Give a ⭐ if you like this project
